@@ -8,5 +8,6 @@ dependencies = [
     "dotenv>=0.9.9",
     "google-genai>=2.3.0",
     "mkdocs-material>=9.7.6",
+    "openai>=2.36.0",
     "pillow>=12.2.0",
 ]

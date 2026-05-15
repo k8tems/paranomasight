@@ -13,3 +13,4 @@ transcriptions/
 compile/
 *.ipynb
 .env
+*.zip

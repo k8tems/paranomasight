@@ -56,7 +56,7 @@ def transcribe_image(image_path: Path, dst_path: Path):
     
     # mime type based on original file extension
     mime_type = get_mime_type(image_path)
-    
+
     prompt = """
 画像に書かれてるテキストを書き起こして下さい。。
 - 画像のテキストは日本語で書かれています。
@@ -65,7 +65,8 @@ def transcribe_image(image_path: Path, dst_path: Path):
 画面の3/4を占めてる右側のテキスト(以降資料部分)が内容です。
 - 資料に画像がある場合はスキップして下さい。
 - <重要> 書き起こしは資料部分のみでお願いします。
-- 判明してる場合は、資料のタイトルを1行めに<タイトル>の形式で書き起こして下さい。"""
+- 判明してる場合は、資料のタイトルを1行めに<タイトル>の形式で書き起こして下さい。
+- フリガナがある場合は無視してください。"""
     transcription = query_llm(prompt, image_bytes, mime_type)
     print(transcription)
     dst_path.write_text(transcription, encoding='utf-8')

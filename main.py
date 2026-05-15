@@ -27,7 +27,7 @@ def get_mime_type(filename):
 def query_llm(prompt: str, image_bytes: bytes, mime_type: str) -> str:
     client = genai.Client()
     response = client.models.generate_content(
-        model='gemini-2.5-flash-lite',
+        model='gemini-2.5-flash',
         contents= [
         types.Part.from_bytes(
             data=image_bytes,
@@ -84,7 +84,6 @@ def main():
             time.sleep(3)  # politeness
         else:
             print(f"{dst_path} already exists. Skipping.")
-
 
 
 if __name__ == "__main__":

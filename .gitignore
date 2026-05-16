@@ -16,3 +16,5 @@ compile/
 *.zip
 site/
 prepared_screenshots/
+screenshots_azusa/
+preprocessed_azusa/

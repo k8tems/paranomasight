@@ -1,1 +1,9 @@
 site_name: パラノマサイト 伊勢人魚物語 wiki
+
+theme:
+  name: material
+  
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences

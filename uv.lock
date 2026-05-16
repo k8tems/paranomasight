@@ -657,6 +657,7 @@ dependencies = [
     { name = "mkdocs-material" },
     { name = "openai" },
     { name = "pillow" },
+    { name = "pymdown-extensions" },
 ]
 
 [package.metadata]
@@ -666,6 +667,7 @@ requires-dist = [
     { name = "mkdocs-material", specifier = ">=9.7.6" },
     { name = "openai", specifier = ">=2.36.0" },
     { name = "pillow", specifier = ">=12.2.0" },
+    { name = "pymdown-extensions", specifier = ">=10.21.3" },
 ]
 
 [[package]]

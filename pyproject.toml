@@ -10,4 +10,5 @@ dependencies = [
     "mkdocs-material>=9.7.6",
     "openai>=2.36.0",
     "pillow>=12.2.0",
+    "pymdown-extensions>=10.21.3",
 ]
